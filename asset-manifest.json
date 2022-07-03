@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Maabportfolio/static/css/main.c7b12f0e.css",
+    "main.js": "/Maabportfolio/static/js/main.0546b740.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Maabportfolio/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/Maabportfolio/index.html",
+    "main.c7b12f0e.css.map": "/Maabportfolio/static/css/main.c7b12f0e.css.map",
+    "main.0546b740.js.map": "/Maabportfolio/static/js/main.0546b740.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Maabportfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7b12f0e.css",
+    "static/js/main.0546b740.js"
+  ]
+}
