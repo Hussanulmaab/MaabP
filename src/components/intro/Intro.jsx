@@ -20,27 +20,27 @@ export default function Intro() {
     <div className='intro' id='intro'>
         <div className="stage-cube-cont">
             <div className="cubespinner">
-              <div className='face1'>
-                <FontAwesomeIcon icon={faWordpress} />
+              <div className='face'>
+                <FontAwesomeIcon icon={faWordpress}  id='face1'/>
               </div>
-              <div className='face2'>
-                <FontAwesomeIcon icon={faReact} />
+              <div className='face'>
+                <FontAwesomeIcon icon={faReact} id='face2'/>
               </div>
-              <div className='face3'>
-                <FontAwesomeIcon icon={faHtml5} />
+              <div className='face'>
+                <FontAwesomeIcon icon={faHtml5} id='face3'/>
               </div>
-              <div className='face4'>
-                <FontAwesomeIcon icon={faCss3} />
+              <div className='face'>
+                <FontAwesomeIcon icon={faCss3} id='face4'/>
               </div>
-              <div className='face5'>
-                <FontAwesomeIcon icon={faShopify} />
+              <div className='face'>
+                <FontAwesomeIcon icon={faShopify} id='face5'/>
               </div>
             </div>
         </div>
         <div className="right">
             <div className="wrapper">
               <h1>Hi There,</h1>
-              <h2>Abababa</h2>
+              <h2>I am Hussan ul Maab</h2>
               <h3>Freelance <span ref={textRef}></span></h3>
             </div>
             <a href="#portfolio">

@@ -23,14 +23,6 @@ export default function Portfolio() {
       id : "web",
       title : "Web App",
     },
-    {
-      id : "mobile",
-      title : "Mobile App",
-    },
-    {
-      id : "design",
-      title : "Design",
-    },
   ]
 
   useEffect(() => {

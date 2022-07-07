@@ -2,7 +2,7 @@
 
 
 .intro{
-    background-color: white;
+    background: linear-gradient(90deg, #214143, #b9a8ad);
     display: flex;
 
     @include mobile{
@@ -12,79 +12,161 @@
 
     .stage-cube-cont {
         flex: 0.5;
-        width: 50%;
-        height: 100%;
-        top: 0;
-        margin-left: 0;
-        position: relative;
-        left: 0;
-        overflow: hidden;
-    }
-    
-    .cubespinner{
-        animation-name: spincube;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 12s;
-        transform-style: preserve-3d;
-        transform-origin: 100px 100px 0;
-        margin-left: calc(50% - 100px);
-    
-        div{
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background-color: rgba(255, 255, 255, 0.4);
-            font-size: 100px;
-            padding-top: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .cubespinner{
+            padding: 100px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            box-shadow: 0 0 20px 0px lightyellow;  
+            justify-content: center;
+
+            @include mobile{
+                padding-top: 200px;
+            }
         }
-        .face1 {
-            transform: translateZ(100px);
-            color: #dd0031;
-          }
-          .face2 {
-            transform: rotateY(90deg) translateZ(100px);
-            color: #f06529;
-          }
-          .face3 {
-            transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-            color: #28a4d9;
-          }
-          .face4 {
-            transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-            color: #5ed4f4;
-          }
-          .face5 {
-            transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-            color: #efd81d;
-          }
-    }
-    
-    @keyframes spincube {
-        from,
-        to{
-            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+        .face{
+            position: absolute;
+            font-size: 150px;
+            
+            #face1{
+                animation-name: showface1;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+
+                @keyframes showface1 {
+                    0%{
+                        opacity: 1;
+                    }
+                    20%{
+                        opacity: 0;
+                    }
+                    40%{
+                        opacity: 0;
+                    }
+                    60%{
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+
+            #face2{
+                animation-name: showface2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+
+                @keyframes showface2 {
+                    0%{
+                        opacity: 0;
+                    }
+                    20%{
+                        opacity: 1; 
+                    }
+                    40%{
+                        opacity: 0;
+                    }
+                    60%{
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+
+            #face3{
+                animation-name: showface3;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+
+                @keyframes showface3 {
+                    0%{
+                        opacity: 0;
+                    }
+                    20%{
+                        opacity: 0;
+                    }
+                    40%{
+                        opacity: 1;
+                    }
+                    60%{
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+
+            #face4{
+                animation-name: showface4;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+
+                @keyframes showface4 {
+                    0%{
+                        opacity: 0;
+                    }
+                    20%{
+                        opacity: 0;
+                    }
+                    40%{
+                        opacity: 0;
+                    }
+                    60%{
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+
+            #face5{
+                animation-name: showface5;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+
+                @keyframes showface5 {
+                    0%{
+                        opacity: 0;
+                    }
+                    20%{
+                        opacity: 0;
+                    }
+                    40%{
+                        opacity: 0;
+                    }
+                    60%{
+                        opacity: 1;
+                    }
+                    80%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
         }
-        16%{
-            transform: rotateY(-90deg);
-        }
-        33%{
-            transform: rotateY(-90deg) rotateZ(90deg);
-        }
-        50%{
-            transform: rotateY(-180deg) rotateZ(90deg);      
-        }
-        66%{
-            transform: rotateY(-270deg) rotateZ(90deg);
-        }
-        83%{
-            transform: rotateY(-90deg) rotateZ(90deg);
-        }
-    
+
     }
     
     .right{
@@ -98,6 +180,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            color: rgba(20, 10, 10, 1);
 
             @include mobile{
                 padding-left: 0;

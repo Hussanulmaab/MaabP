@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: white;
+    background: linear-gradient(90deg, #214143, #b9a8ad);
     display: flex;
 
     @include mobile{
